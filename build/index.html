@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  
+  <!-- PWA関連のメタタグ -->
+  <meta name="theme-color" content="#1976d2">
+  <meta name="description" content="メンバーの入退室状況をリアルタイムで管理するアプリ">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="滞在管理">
+  
+  <!-- マニフェストと各種アイコン -->
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+  
+		<link rel="modulepreload" href="/_app/immutable/entry/start.BaecM9by.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/BnnD5lNr.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/BVNNn7ox.js">
+		<link rel="modulepreload" href="/_app/immutable/entry/app.BwpXI_bp.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/CKQCreVm.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/BqwgYQ-J.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/DUUr3DC5.js">
+</head>
+<body>
+  <div id="svelte">
+			<script>
+				{
+					__sveltekit_1uq4nq4 = {
+						base: ""
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("/_app/immutable/entry/start.BaecM9by.js"),
+						import("/_app/immutable/entry/app.BwpXI_bp.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element);
+					});
+				}
+			</script>
+		</div>
+  
+  <!-- サービスワーカーの登録スクリプト -->
+  <script>
+    if ('serviceWorker' in navigator && window.location.hostname !== 'localhost') {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js')
+          .then(registration => {
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+          })
+          .catch(error => {
+            console.log('ServiceWorker registration failed: ', error);
+          });
+      });
+    }
+  </script>
+</body>
+</html>
