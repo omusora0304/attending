@@ -6,12 +6,12 @@ export const COLLECTIONS = {
   
   // 学年
   export const GRADES = {
-    P: 'P',
-    D: 'D',
+    H3: 'H3',
+    H2: 'H2',
+    H1: 'MH1',
+    M3: 'M3',
     M2: 'M2',
-    M1: 'M1',
-    B4: 'B4',
-    B3: 'B3'
+    M1: 'M1'
   };
   
   // 学年の表示順（降順）

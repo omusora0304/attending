@@ -99,7 +99,7 @@ const updateIndividualListeners = (membersList: Member[]) => {
             const updatedMember: Member = {
               id: doc.id,
               name: data.name,
-              grade: data.grade || 'B4', // gradeがない場合のフォールバック
+              grade: data.grade || 'H3', // gradeがない場合のフォールバック
               status: data.status,
               lastStatusChange: data.lastStatusChange ? data.lastStatusChange.toDate() : new Date(),
               sortValue: data.sortValue

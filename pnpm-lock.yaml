@@ -27,6 +27,9 @@ importers:
       '@sveltejs/vite-plugin-svelte':
         specifier: ^5.0.0
         version: 5.0.3(svelte@5.28.2)(vite@6.3.5(@types/node@22.15.17))
+      '@types/date-fns':
+        specifier: ^2.6.3
+        version: 2.6.3
       svelte:
         specifier: ^5.0.0
         version: 5.28.2
@@ -607,6 +610,10 @@ packages:
 
   '@types/cookie@0.6.0':
     resolution: {integrity: sha512-4Kh9a6B2bQciAhf7FSuMRRkUWecJgJu9nPnx3yzpsfXX/c50REIqpHY4C82bXP90qrLtXtkDxTZosYO3UpOwlA==}
+
+  '@types/date-fns@2.6.3':
+    resolution: {integrity: sha512-Ke1lw2Ni1t/wMUoLtKFmSNCLozcTBd6vmMqFP4hRzXn6qzkNt97bPAX0x5Y/c15DP43kKvwW1ycStD5+43jVQA==}
+    deprecated: This is a stub types definition. date-fns provides its own type definitions, so you do not need this installed.
 
   '@types/estree@1.0.7':
     resolution: {integrity: sha512-w28IoSUCJpidD/TGviZwwMJckNESJZXFu7NBZ5YJ4mEUnNraUn9Pm8HSZm/jDF1pDWYKspWE7oVphigUPRakIQ==}
@@ -1497,6 +1504,10 @@ snapshots:
       - supports-color
 
   '@types/cookie@0.6.0': {}
+
+  '@types/date-fns@2.6.3':
+    dependencies:
+      date-fns: 4.1.0
 
   '@types/estree@1.0.7': {}
 
